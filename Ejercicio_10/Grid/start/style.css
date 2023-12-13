@@ -1,0 +1,41 @@
+
+body {
+    margin: 10px;
+    border: 1px solid;
+    border-color: grey;
+    border-radius: 5px;
+}
+
+div {
+    border:1px solid;
+    border-color: grey;
+    text-align: center;
+}
+
+section.grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+div::before{
+    background-color: black;
+    color:white;
+}
+
+section.simbolos{
+    background-color: rgb(120, 133, 141);
+    color:black;
+}
+
+section.numeros{
+    background-color: white;
+    color:black;
+}
+
+section.igual{
+    background-color: red;
+    color:black;
+}
