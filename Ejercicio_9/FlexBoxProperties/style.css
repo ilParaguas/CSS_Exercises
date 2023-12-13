@@ -1,1 +1,60 @@
 
+body{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:3rem;
+    margin: 0;
+}
+
+section{
+    display: flex;
+    width: calc(100vw/7);
+    height: 100vh;    
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+p{
+    font-weight: bold;
+}
+
+ul{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    list-style-type:none;
+    gap: 2rem;
+    width: 20%;
+    padding: 20%;
+}
+
+li {
+    text-align: center;
+    background-color: white;
+    padding: 25%;
+    margin:auto;
+}
+
+#yellow{
+    background-color: rgb(245, 245, 122);
+}
+
+#red{
+    background-color: rgb(250, 97, 97);
+}
+
+#green{
+    background-color: rgb(104, 253, 104);
+}
+
+#orange{
+    background-color: rgb(255, 206, 114);
+    width: calc(100vw/7*2);
+
+}
+
+#blue{
+    background-color: rgb(148, 148, 245);
+}
