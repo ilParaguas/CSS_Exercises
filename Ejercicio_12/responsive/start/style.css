@@ -5,8 +5,6 @@ body{
 
 main.grid{
     display:grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
 
     grid-template-areas: 
     "nav nav nav nav"
@@ -31,9 +29,20 @@ a:hover{
     background-color: #234567;
 }
 
+@media (min-width:990px){ 
 #sidebar{
     grid-area: sidebar;
     width:25vw;
+    background-color: #edefff;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+#article>img{
+    flex-wrap: wrap;
+    width:max-content;
+}
+
 }
 
 #article{
@@ -42,4 +51,30 @@ a:hover{
 
 #footer{
     grid-area: footer;
+    background-color: #012345;
+}
+
+#article > img{
+    min-height: 300px;
+}
+
+form{
+    color:white;
+    text-align: right;
+}
+
+button{
+    background-color: #ff784d;
+    color:white;
+}
+
+button:hover{
+    color:#ff784d;
+    background-color: white;
+    transition:0.4s;
+}
+
+#article, #sidebar, #footer {
+    padding-bottom: 16px;
+    padding-right: 8px;
 }
