@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
     <title>CSS Lesson</title>
 </head>
 
 <body>
-    <main>
-        <article>
+    <main class="grid">
+        <header id="nav">
+            <nav>
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+            </nav>
+        </header>
+        <article id="article">
             <h2>Latin text</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet urna hendrerit, laoreet
                 nulla elementum, faucibus mi. In lacinia vestibulum odio a varius. Integer vitae lacus ut lorem semper
@@ -53,14 +61,18 @@
             <img src="../assets/img1.png" alt="Immagine 1"/>
             <img src="../assets/img2.png" alt="Immagine 2"/>
         </article>
+        <section id="sidebar">
+            <img src="../assets/img1.png">
+        </section>
+    
+        <footer id="footer">
+            <form action="#">
+                <label for="form-email"> Email</label>
+                <input type="email" id="form-email" required />
+                <button type="submit">Submit to the newsletter</button>
+            </form>
+        </footer>
     </main>
 </body>
-<footer>
-    <form action="#">
-        <label for="form-email"> Email</label>
-        <input type="email" id="form-email" required />
-        <button type="submit">Submit to the newsletter</button>
-    </form>
-</footer>
 
 </html>

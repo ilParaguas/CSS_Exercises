@@ -12,4 +12,3 @@ The article, sidebar, and the footer should have an internal spacing of 8px vert
 In mobile view the sidebar should have a padding-top equal to 16px and padding-bottom equal to 32px
 
 Try to use the grid-area to manage the layout.
-
