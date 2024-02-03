@@ -1,1 +1,42 @@
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: grid;
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.green {
+    background-color: green;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+.yellow {
+    background-color: yellow;
+    grid-column: 1;
+    grid-row: 2;
+}
+.red {
+    background-color: red;
+    grid-column: 2;
+    grid-row: 2;
+}
+.orange {
+    background-color: orange;
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.blue {
+    background-color: blue;
+    grid-column: 3;
+    grid-row: 2/4;
+}
